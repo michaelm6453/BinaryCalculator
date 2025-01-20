@@ -87,7 +87,13 @@ public class Binary
         return result;
 
     }
-
+    /**
+     * Bitwise logitcal OR of two binary variables.
+     *
+     * @param num1 The first addend object
+     * @param num2 The second addend object
+     * @return A binary variable with a value of <i>num1 | num2</i>.
+     */
     public static Binary or(Binary num1, Binary num2){
         int ind1 = num1.number.length() - 1;
         int ind2 = num2.number.length() - 1;
@@ -126,6 +132,13 @@ public class Binary
         return new Binary(num3);
     }
 
+    /**
+     * Bitwise logitcal AND of two binary variables.
+     *
+     * @param num1 The first addend object
+     * @param num2 The second addend object
+     * @return A binary variable with a value of <i>num1 & num2</i>.
+     */
 
     public static Binary and(Binary num1, Binary num2){
         int ind1 = num1.number.length() - 1;
@@ -165,7 +178,13 @@ public class Binary
         return new Binary(num3);
     }
 
-
+    /**
+     * multiplication of two binary variables.
+     *
+     * @param num1 The first addend object
+     * @param num2 The second addend object
+     * @return A binary variable with a value of <i>num1 x num2</i>.
+     */
     public static Binary multiply(Binary num1, Binary num2){
         //binary multiplication uses the AND gate (and function) and then sums together (add function)
         // could convert second num to decimal and just call add function that many times
